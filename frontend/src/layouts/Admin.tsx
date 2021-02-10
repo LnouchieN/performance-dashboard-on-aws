@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import Footer from "./Footer";
 import logo from "../logo.svg";
+import { isFederatedLogin } from "../amplify-config";
 
 interface LayoutProps {
   children: ReactNode;
@@ -17,7 +18,7 @@ function AdminLayout(props: LayoutProps) {
 
   const signOut = async (event: React.MouseEvent) => {
     try {
-      if (isFederatedId) {
+      if (isFederatedLogin()) {
         event.preventDefault();
       }
       await Auth.signOut();
