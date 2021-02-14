@@ -246,6 +246,7 @@ export type LocationState = {
     linkLabel?: string;
   };
   emails?: string;
+  usernames?: Array<string>;
   id?: string;
   metrics?: Array<Metric>;
   metric?: Metric;

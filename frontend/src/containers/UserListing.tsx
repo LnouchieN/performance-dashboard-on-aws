@@ -29,6 +29,7 @@ function UserListing() {
   const changeRole = () => {
     history.push("/admin/users/changerole", {
       emails: selected.map((s) => s.email).join(", "),
+      usernames: selected.map((s) => s.userId),
     });
   };
 
