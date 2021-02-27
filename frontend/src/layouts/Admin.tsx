@@ -5,7 +5,7 @@ import { useSettings, useCurrentAuthenticatedUser } from "../hooks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
 import Footer from "./Footer";
-import logo from "../logo.svg";
+import Logo from "../components/Logo";
 
 interface LayoutProps {
   children: ReactNode;
