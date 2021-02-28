@@ -177,6 +177,15 @@ function UserListing() {
             <Button
               variant="outline"
               disabled={selected.length === 0}
+              onClick={changeRole}
+            >
+              Change role
+            </Button>
+          </span>
+          <span>
+            <Button
+              variant="outline"
+              disabled={selected.length === 0}
               onClick={onRemoveUsers}
             >
               Remove user(s)
