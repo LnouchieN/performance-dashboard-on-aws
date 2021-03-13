@@ -152,6 +152,9 @@ function UserListing() {
         <div className="tablet:grid-col-8 text-right">
           <span>
             <DropdownMenu buttonText="Actions" variant="outline">
+              <MenuItem onSelect={changeRole} disabled={selected.length === 0}>
+                Change role
+              </MenuItem>
               <MenuItem
                 onSelect={onResendInvite}
                 disabled={resendInviteEmailDisabled()}
